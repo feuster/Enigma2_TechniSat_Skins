@@ -1,5 +1,5 @@
 # Enigma² TechniSat Skins
-This are Enigma² skins which are inspired by the UI look&feel of the TechniSat STBs and TVs.\
+These are Enigma² skins which are inspired by the UI look&feel of the TechniSat STBs and TVs.\
 These skins have been tested with VuPlus "Duo²" and "Solo 4k" (VTI Version >= 9.2) but may also work with other Enigma² based STBs.
 
 ## License

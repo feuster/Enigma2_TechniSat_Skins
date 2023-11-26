@@ -1,0 +1,43 @@
+<skin>
+	<!-- Parameter -->
+	<parameters>
+		<parameter name="PluginListFont1" value="Regular;54" /> <!-- use "PluginListFont1" instead of "PluginListFontSize1" -->
+		<parameter name="PluginListFont2" value="Regular;34" /> <!-- use "PluginListFont2" instead of "PluginListFontSize2" -->
+		<parameter name="PluginListItemHeight" value="100" />
+		<parameter name="PluginListIcon" value="3,25,100,50" />
+		<parameter name="PluginListName" value="105,0,1080,60" />
+		<parameter name="PluginListDescription" value="106,60,1080,40" />
+	</parameters>
+	<!-- Plugin browser -->
+	<screen name="PluginBrowser" position="center,center" size="1920,1080" title="Plugin browser" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_plugins" />
+		<constant-widget name="icon_bigplugins" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="Plugin browser" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="all_buttons_9" />
+		<!-- Plugin browser 
+		for VuPlus use "list" instead of "pluginlist" widget!!!
+		--> 
+		<widget name="list" position="540,170" size="1222,745" zPosition="1" itemHeight="100" font="Regular;42" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_3/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_3/menu/selection_1222x100px.png" transparent="1" />
+	</screen>
+	<!-- Plugin Downloadbrowser -->
+	<screen name="PluginDownloadBrowser" position="center,center" size="1920,1080" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_plugins" />
+		<constant-widget name="icon_bigplugins" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="Downloadable plugins" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="buttons_exit_ok" />
+		<!-- Plugin Downloadbrowser -->
+		<widget name="list" position="540,170" size="1222,745" zPosition="1" itemHeight="100" font="Regular;42" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_3/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_3/menu/selection_1222x100px.png" transparent="1" />
+	</screen>
+</skin>

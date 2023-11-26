@@ -1,0 +1,11 @@
+<skin>
+	<!-- Fonts -->
+	<fonts>
+		<font filename="TechniSat_1/fonts/EncodeSansCondensed-400-Regular.ttf" name="Regular" scale="96" />
+		<font filename="TechniSat_1/fonts/EncodeSansCondensed-600-SemiBold.ttf" name="Big" scale="143" />
+		<font filename="TechniSat_1/fonts/EncodeSansCondensed-300-Light.ttf" name="Light" scale="96" />
+		<font filename="lcd.ttf" name="LCD" scale="100" />
+		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+	</fonts>
+</skin>

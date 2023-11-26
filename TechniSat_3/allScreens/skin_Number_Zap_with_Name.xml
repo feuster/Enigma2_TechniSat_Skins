@@ -1,0 +1,14 @@
+<skin>
+	<!-- NumberZapWithName -->
+	<screen name="NumberZapWithName" position="555,404" size="811,272" title="Extended NumberZap" backgroundColor="transparent" zPosition="5" flags="wfNoBorder">
+		<!-- Main form -->
+		<ePixmap pixmap="TechniSat_3/extras/numberzap_bg.png" position="0,0" size="811,272" zPosition="6" backgroundColor="transparent" alphatest="on" />
+		<!-- NumberZapWithName -->
+		<widget name="servicenumber" position="2,2" size="807,102" zPosition="7" font="Big;60" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="servicename" position="2,104" size="807,102" zPosition="7" font="Big;42" halign="center" valign="center" backgroundColor="black" transparent="1" />
+		<widget source="Service" position="2,206" render="Picon" size="105,63" zPosition="7" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget name="servicebouquet" position="109,206" size="637,63" zPosition="7" font="Big;36" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" />
+	</screen>
+</skin>

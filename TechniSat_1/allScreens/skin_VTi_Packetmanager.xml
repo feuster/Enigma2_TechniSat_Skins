@@ -1,0 +1,29 @@
+<skin>
+	<!-- myPacketManager (VTi) -->
+	<screen name="myPacketManager" position="center,center" size="1920,1080" title="Download or delete Cam" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_plugins" />
+		<constant-widget name="icon_bigplugins" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<!--<eLabel text="Download or delete Cam" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />-->
+		<widget source="title" render="Label" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="buttons_red_green_exit" />
+		<!-- myPacketManager (VTi) -->
+		<widget source="list" render="Listbox" position="540,170" size="1222,745" zPosition="1" itemHeight="100" font="Regular;42" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_1/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_1/menu/selection_1222x100px.png" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaTest(pos = (6, 26), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (62, 0), size = (1100, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+						MultiContentEntryText(pos = (62, 60), size = (1100, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+					],
+				"fonts": [gFont("Regular", 54),gFont("Regular", 36)],
+				"itemHeight": 100
+				}
+			</convert>
+		</widget>
+	</screen>
+</skin>

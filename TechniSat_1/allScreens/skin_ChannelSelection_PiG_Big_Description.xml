@@ -1,0 +1,41 @@
+<skin>
+	<!-- Channel selection - TV -->
+	<screen name="ChannelSelection" position="center,center" size="1920,1080" zPosition="-1" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<widget source="ServiceEvent" render="Picon" position="120,75" size="82,61" zPosition="3" transparent="1" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="Channel Selection" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="all_buttons_3" />
+		<!-- Channel selection - TV -->
+		<widget name="list" position="540,170" size="1222,745" backgroundColor="scolor1" serviceItemHeight="60" serviceNumberFont="Regular;42" serviceNameFont="Regular;42" serviceInfoFont="Regular;18" colorServiceDescription="grey" colorServiceDescriptionSelected="scolor2" foregroundColorServiceNotAvail="red2" picServiceEventProgressbar="TechniSat_1/extras/progress_channellist.png" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="black" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_1/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_1/menu/selection_1222x60px.png" transparent="1"/>
+		<widget source="ServiceEvent" render="Label" noWrap="1" position="67,396" zPosition="1" size="452,36" font="Regular;36" valign="center" halign="left" backgroundColor="black" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="67,432" size="452,456" zPosition="0" font="Regular;32" backgroundColor="scolor4" transparent="1">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<eLabel position="67,888" size="452,2" zPosition="2" backgroundColor="grey" />
+		<widget source="ServiceEvent" render="Label" position="67,889" size="90,45" font="Regular;36" valign="center" halign="left" zPosition="1" backgroundColor="scolor2" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText"></convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="157,889" size="24,45" valign="center" halign="center" zPosition="1" font="Regular;36" backgroundColor="scolor2" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:-</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="181,889" size="90,45" valign="center" halign="right" zPosition="1" font="Regular;36" backgroundColor="scolor2" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText"></convert>
+		</widget>
+		<ePixmap pixmap="TechniSat_1/extras/eventprogressbg.png" position="291,905" size="225,14" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="ServiceEvent" render="Progress" pixmap="TechniSat_1/extras/eventprogressvalue.png" position="293,907" size="221,10" zPosition="2" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+	</screen>
+</skin>

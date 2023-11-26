@@ -1,0 +1,37 @@
+<skin>
+	<!-- StreamTVList -->
+	<screen name="StreamTVList" position="center,center" size="1920,1080" title="StreamTV List" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_main" />
+		<constant-widget name="icon_bigmain" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="StreamTV List" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="buttons_exit_ok" />
+		<!-- StreamTVList -->
+		<widget name="infolabel" position="540,170" size="1222,56" font="Regular;42" valign="center" halign="left" backgroundColor="black" transparent="1" />
+		<eLabel position="519,226" zPosition="1" size="1401,2" backgroundColor="grey" />
+		<widget name="infomation" position="540,229" size="1222,80" font="Regular;40" valign="center" halign="left" backgroundColor="black" transparent="1" />
+		<eLabel position="519,310" zPosition="1" size="1401,2" backgroundColor="grey" />
+		<widget name="streamlist" position="540,312" size="1185,615" zPosition="2" itemHeight="40" font="Regular;36" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_3/menu/mainmenu_scrollbar_bg_arrows_615px.png" selectionPixmap="TechniSat_3/menu/selection_1222x40px.png" transparent="1" />
+	</screen>
+
+	<!-- StreamTVPlayer -->
+	<screen name="StreamTVPlayer" position="center,center" size="1920,1080" zPosition="0" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" >
+		<!-- Main form -->
+		<constant-widget name="infobar_bg" />
+		<ePixmap pixmap="TechniSat_3/extras/movie_picon.png" position="18,896" zPosition="1" size="202,122" alphatest="blend" /><!-- Media icon as alternative for a picon-->
+		<constant-widget name="video_resolution" />
+		<!-- Clock -->
+		<constant-widget name="clock" />
+		<!-- StreamTVPlayer -->
+		<widget name="channel_name" position="0,760" zPosition="1" size="1920,135" valign="center" halign="center" font="Regular;60" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+		<widget name="channel_uri" position="230,957" size="1460,60" font="Regular;46" noWrap="1" halign="center" valign="center" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="275,696" zPosition="1" size="250,64" valign="center" halign="right" font="Regular;36" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+	</screen>
+</skin>

@@ -1,0 +1,33 @@
+<skin>
+	<!-- PermanentClock -->
+	<screen name="PermanentClockScreen" position="0,0" size="113,64" zPosition="30" backgroundColor="transparent" title="" flags="wfNoBorder">
+		<ePixmap pixmap="TechniSat_1/extras/clock.png" position="0,0" size="113,64" zPosition="31" backgroundColor="black" alphatest="on" />
+		<widget source="global.CurrentTime" render="Label" position="0,0" size="113,64" zPosition="32" font="Regular;42" valign="center" halign="center" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+
+	<!-- PermanentClockPositioner -->
+	<screen name="PermanentClockPositioner" position="0,0" size="113,64" zPosition="30" backgroundColor="transparent" title="Permanent Clock Position" flags="wfNoBorder">
+		<ePixmap pixmap="TechniSat_1/extras/clock.png" position="0,0" size="113,64" zPosition="31" backgroundColor="black" alphatest="on" />
+		<widget source="global.CurrentTime" render="Label" position="0,0" size="113,64" zPosition="32" font="Regular;42" valign="center" halign="center" backgroundColor="black" foregroundColor="orange" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+
+	<!-- PermanentClockMenu -->
+	<screen name="PermanentClockMenu" position="center,center" size="1920,1080" title="Permanent Clock" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_setup" />
+		<constant-widget name="icon_wrench" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="Permanent Clock" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="buttons_exit_ok" />
+		<!-- PermanentClockMenu -->
+		<widget name="list" position="540,170" size="1222,745" itemHeight="60" font="Regular;42" scrollbarMode="showOnDemand" backgroundColor="scolor2" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_1/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_1/menu/selection_1222x60px.png" transparent="1" />
+	</screen>
+</skin>

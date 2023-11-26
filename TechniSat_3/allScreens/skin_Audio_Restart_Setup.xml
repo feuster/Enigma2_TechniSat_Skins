@@ -1,0 +1,17 @@
+<skin>
+	<!-- AudioRestartSetup -->
+	<screen name="AudioRestartSetup" position="center,center" size="1920,1080" title="Audio Restart Setup" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_setup" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="Audio Restart Setup" position="225,68" size="1000,160" zPosition="1" font="Regular;60" backgroundColor="black" transparent="1" />
+		<!-- Buttons -->
+		<constant-widget name="all_buttons_3" />
+		<!-- AudioRestartSetup -->
+		<widget name="PluginInfo" position="10,390" size="499,300" zPosition="1" font="Regular;36" backgroundColor="black" valign="center" halign="center" transparent="1" />
+		<widget name="config" position="540,170" size="1222,745" itemHeight="60" font="Regular;42" scrollbarMode="showOnDemand" backgroundColor="scolor1" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_3/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_3/menu/selection_1222x60px.png" transparent="1" />
+	</screen>
+</skin>

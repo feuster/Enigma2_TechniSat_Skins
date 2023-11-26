@@ -1,0 +1,11 @@
+<skin>
+	<!-- Fonts -->
+	<fonts>
+		<font filename="TechniSat_3/fonts/IBMPlexSans-Text.ttf" name="Regular" scale="85" />
+		<font filename="TechniSat_3/fonts/IBMPlexSans-SemiBold.ttf" name="Big" scale="135" />
+		<font filename="TechniSat_3/fonts/IBMPlexSans-Light.ttf" name="Light" scale="85" />
+		<font filename="lcd.ttf" name="LCD" scale="100" />
+		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+	</fonts>	
+</skin>

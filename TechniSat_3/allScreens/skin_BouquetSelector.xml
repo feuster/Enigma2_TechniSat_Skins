@@ -1,0 +1,11 @@
+<skin>
+	<!-- Bouquet selector -->
+	<screen name="BouquetSelector" position="center,center" size="811,600" title="Choose bouquet" backgroundColor="transparent" zPosition="0" flags="wfNoBorder">
+		<!-- Main form -->
+		<ePixmap pixmap="TechniSat_3/extras/channelselectionradio_bg.png" position="0,0" size="811,600" zPosition="2" backgroundColor="transparent" alphatest="on" />
+		<!-- Buttons -->
+		<constant-widget name="buttons_exit_ok_2" />
+		<!-- Bouquet selector -->
+		<widget name="menu" position="2,2" size="807,532" itemHeight="60" zPosition="3" font="Regular;42" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_3/menu/mainmenu_scrollbar_bg_arrows_532px.png" selectionPixmap="TechniSat_3/menu/selection_807x60px.png" transparent="1" />
+	</screen>
+</skin>

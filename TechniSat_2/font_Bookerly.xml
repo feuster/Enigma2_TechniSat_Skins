@@ -1,0 +1,11 @@
+<skin>
+	<!-- Fonts -->
+	<fonts>
+		<font filename="TechniSat_2/fonts/Bookerly-Regular.ttf" name="Regular" scale="88" />
+		<font filename="TechniSat_2/fonts/Bookerly-Bold.ttf" name="Big" scale="133" />
+		<font filename="TechniSat_2/fonts/Bookerly-Regular.ttf" name="Light" scale="82" />
+		<font filename="lcd.ttf" name="LCD" scale="100" />
+		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+	</fonts>	
+</skin>

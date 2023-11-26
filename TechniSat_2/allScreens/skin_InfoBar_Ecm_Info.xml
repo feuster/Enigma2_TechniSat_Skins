@@ -1,0 +1,20 @@
+<skin>
+	<!-- Main infobar -->
+	<screen name="InfoBar" position="center,center" size="1920,1080" zPosition="-1" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" >
+		<!-- Main form -->
+		<constant-widget name="infobar_bg" />
+		<constant-widget name="infobar_basics" />
+		<constant-widget name="infobar_picon" />
+		<constant-widget name="video_resolution" />
+		<!-- Clock -->
+		<constant-widget name="clock" />
+		<!-- Service info icons (TV) -->
+		<constant-widget name="icon_serviceinfo_tv" />
+		<constant-widget name="icon_serviceinfo_signal" />
+		<!-- ECM Info -->
+		<widget source="session.CurrentService" render="VtiEmuInfo" position="37,696" size="600,64" zPosition="1" font="Regular;36" valign="center" backgroundColor="black" foregroundColor="white" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="637,696" size="1246,64" zPosition="1" noWrap="1" font="Regular;36" valign="center" halign="right" backgroundColor="black" foregroundColor="white" transparent="1">
+			<convert type="VtiInfo">EcmInfo</convert>
+		</widget>
+	</screen>
+</skin>

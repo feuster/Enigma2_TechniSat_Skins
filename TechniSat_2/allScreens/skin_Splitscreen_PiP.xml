@@ -1,0 +1,26 @@
+<skin>
+	<!-- SplitScreen -->
+	<screen name="SplitScreen" position="center,center" size="1920,1080" zPosition="-1" title="SplitScreen" backgroundColor="transparent" flags="wfNoBorder" >
+		<widget name="zap_focus" position="0,419" size="1920,242" font="Regular;50" zPosition="10" halign="center" valign="center" backgroundColor="transparent" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+		<widget name="video1" position="0,0" size="1920,1080" backgroundColor="transparent" />
+		<widget name="video2" position="1260,20" size="640,360" backgroundColor="transparent" />
+		<widget source="MasterService" render="Picon" position="20,20" zPosition="1" size="200,120" transparent="1" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="SlaveService" render="Picon" position="1266,26" zPosition="1" size="66,40" transparent="1" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="MasterService" render="Label" position="222,20" size="778,60" zPosition="20" font="Regular;46" halign="left" backgroundColor="transparent" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ServiceName" />
+		</widget>
+		<widget source="MasterService" render="Label" position="222,80" size="778,60" zPosition="20" font="Regular;46" halign="left" backgroundColor="transparent" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="EventName" />
+		</widget>
+		<widget source="SlaveService" render="Label" position="1334,26" size="260,20" zPosition="20" font="Regular;16" halign="left" backgroundColor="transparent" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServiceName" />
+		</widget>
+		<widget source="SlaveService" render="Label" position="1334,46" size="260,20" zPosition="20" font="Regular;16" halign="left" backgroundColor="transparent" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+			<convert type="EventName" />
+		</widget>
+	</screen>
+</skin>

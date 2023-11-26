@@ -1,0 +1,11 @@
+<skin>
+	<!-- Fonts -->
+	<fonts>
+		<font filename="TechniSat_1/fonts/DroidSans.ttf" name="Regular" scale="92" />
+		<font filename="TechniSat_1/fonts/DroidSans-Bold.ttf" name="Big" scale="139" />
+		<font filename="TechniSat_1/fonts/DroidSans.ttf" name="Light" scale="87" />
+		<font filename="lcd.ttf" name="LCD" scale="100" />
+		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+	</fonts>
+</skin>

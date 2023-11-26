@@ -1,0 +1,33 @@
+<skin>
+	<!-- DVDBackupScreen -->
+	<screen name="DVDBackupScreen" position="center,center" size="1920,1080" zPosition="-1" title="DVD Backup" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_folder" />
+		<constant-widget name="icon_bigfolder" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="DVD Backup" position="225,68" size="1000,160" zPosition="1" font="Regular;60" transparent="1" />		<!-- Buttons -->
+		<!-- Buttons -->
+		<constant-widget name="all_buttons_4" />
+		<!-- Zap-History Browser -->
+		<widget name="config" position="540,170" size="1222,745" itemHeight="60" font="Regular;42" scrollbarMode="showOnDemand" backgroundColor="scolor2" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_2/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionPixmap="TechniSat_2/menu/selection_1222x60px.png" transparent="1" />
+	</screen>
+
+	<!-- DVDBackupProgress -->
+	<screen name="DVDBackupProgress" position="center,center" size="1920,1080" zPosition="-1" title="DVD Backup" backgroundColor="transparent" flags="wfNoBorder">
+		<!-- Main form -->
+		<constant-widget name="mainmenu_bg" />
+		<constant-widget name="mainmenu_pig" />
+		<constant-widget name="icon_folder" />
+		<constant-widget name="icon_bigfolder" />
+		<constant-widget name="clock2" />
+		<!-- Title -->
+		<eLabel text="DVD Backup" position="225,68" size="1000,160" zPosition="1" font="Regular;60" transparent="1" />		<!-- Buttons -->
+		<!-- Buttons -->
+		<constant-widget name="buttons_red" />
+		<!-- Zap-History Browser -->
+		<widget name="list" position="540,170" size="1222,745" itemHeight="25" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="scolor2" scrollbarWidth="35" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scolor2" scrollbarSliderBorderColor="scolor2" scrollbarBackgroundPicture="TechniSat_2/menu/mainmenu_scrollbar_bg_arrows_745px.png" selectionDisabled="1" transparent="1" />
+	</screen>
+</skin>

@@ -1,0 +1,97 @@
+<skin>
+	<!-- Main infobar -->
+	<screen name="InfoBar" position="center,center" size="1920,1080" zPosition="-1" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" >
+		<constant-widget name="infobar_big_bg" />
+		<constant-widget name="infobar_picon" />
+		<constant-widget name="video_resolution" />
+		<!-- Clock -->
+		<constant-widget name="clock" />
+		<!-- Service info icons (TV) -->
+		<constant-widget name="icon_serviceinfo_signal" />
+		<!-- Aspect ratio -->
+		<ePixmap pixmap="TechniSat_2/icons/4-3.png" position="1757,969" size="62,38" zPosition="1" alphatest="on" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TechniSat_2/icons/16-9.png" position="1757,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Teletext -->
+		<ePixmap pixmap="TechniSat_2/icons/txt_off.png" position="1693,969" size="62,38" zPosition="1" alphatest="on" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TechniSat_2/icons/txt.png" position="1693,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Dolby -->
+		<ePixmap pixmap="TechniSat_2/icons/dolby_off.png" position="1629,969" size="62,38" zPosition="1" alphatest="on" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TechniSat_2/icons/dolby.png" position="1629,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Encryption -->
+		<ePixmap pixmap="TechniSat_2/icons/encryption_off.png" position="1565,969" size="62,38" zPosition="1" alphatest="on" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TechniSat_2/icons/encryption.png" position="1565,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- HbbTV -->
+		<!-- HbbTV widget needs to be deactivated due to crash!
+		<widget source="HbbtvApplication" render="Pixmap" pixmap="TechniSat_2/icons/hbbtv.png" position="1501,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		-->
+		<!-- MultiFeed -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TechniSat_2/icons/feed.png" position="1501,907" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Recording -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="TechniSat_2/icons/rec_on.png" position="1437,969" size="62,38" zPosition="2" alphatest="on">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- Service number -->
+		<widget source="session.CurrentService" render="Label" position="240,899" zPosition="1" size="215,115" valign="bottom" halign="right" font="Big;72" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ExtendedServiceInfo">ServiceNumber</convert>
+		</widget>
+		<!-- Orbital position -->
+		<widget source="session.CurrentService" render="Label" position="466,948" zPosition="1" size="115,70" valign="center" halign="left" font="Regular;36" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="VServiceOrbitalPosition">Full</convert>
+		</widget>
+		<!-- Service name -->
+		<widget source="session.CurrentService" render="Label" position="590,943" zPosition="1" size="700,70" valign="bottom" halign="left" font="Regular;60" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- Provider name -->
+		<widget source="session.CurrentService" render="Label" position="466,896" zPosition="1" size="400,70" valign="center" halign="left" font="Regular;36" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="ServiceName">Provider</convert>
+		</widget>
+		<!-- Event name (now) -->
+		<widget source="session.Event_Now" render="Label" noWrap="1" position="466,396" zPosition="1" size="1454,60" valign="center" halign="left" font="Regular;56" backgroundColor="black" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<!-- Event name (description) -->
+		<widget source="session.Event_Now" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=3000,wrap" position="466,456" size="1387,440" font="Regular;40" zPosition="1" backgroundColor="scolor6" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<!-- Progressbar (current event duration) -->
+		<ePixmap pixmap="TechniSat_2/extras/eventprogressbg.png" position="220,455" zPosition="1" size="225,14" transparent="1" alphatest="on" />
+		<widget source="session.Event_Now" render="Progress" position="222,457" size="221,10" pixmap="TechniSat_2/extras/eventprogressvalue.png" zPosition="2" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<!-- Eventtimes (now) -->
+		<widget source="session.Event_Now" render="Label" position="220,398" zPosition="1" size="120,50" valign="center" halign="left" font="Regular;36" backgroundColor="black" foregroundColor="white" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="307,398" size="50,50" valign="center" halign="center" font="Regular;36" backgroundColor="black" foregroundColor="white" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:-</convert>
+		</widget>		
+		<widget source="session.Event_Now" render="Label" position="325,398" zPosition="1" size="120,50" valign="center" halign="right" font="Regular;36" backgroundColor="black" foregroundColor="white" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="0,435" zPosition="1" size="210,50" valign="center" halign="right" font="Regular;36" backgroundColor="black" foregroundColor="white" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+	</screen>
+</skin>
